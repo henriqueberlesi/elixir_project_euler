@@ -4,21 +4,20 @@ defmodule Number do
   """
 
   @doc """
-  The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+  By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
 
-  Find the sum of all the primes below two million.
+  What is the 10 001st prime number?
 
   ## Examples
 
-      iex> Number.sum_of_primes_below(10)
-      17
+      iex> Number.find_nth_prime(6)
+      13
 
   """
-  def sum_of_primes_below(n) do
+  def find_nth_prime(n) do
     Stream.iterate(1, &(&1 + 1))
     |> Stream.filter(&is_prime?/1)
-    |> Enum.take_while(fn x -> x < n end)
-    |> Enum.sum()
+    |> Enum.at(n - 1)
   end
 
   defp is_prime?(n) when n == 2, do: true

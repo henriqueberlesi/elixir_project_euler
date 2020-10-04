@@ -1,21 +1,7 @@
 # Problem10
 
-**TODO: Add description**
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 
-## Installation
+Find the sum of all the primes below two million.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `problem_10` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:problem_10, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/problem_10](https://hexdocs.pm/problem_10).
-
+https://projecteuler.net/problem=10
